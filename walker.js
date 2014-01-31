@@ -4,6 +4,11 @@ function Walker(){
       this.loc[i] = new PVector(random(width), (height/2));
   }
 	n = new Perlin();
+	v = random(0.017,0.023);
+	v2 = random(0.013,0.019);
+    v3 = random(0.014,0.02);
+    v4 = random(0.008,0,014);
+
 }
 
 Walker.prototype.render = function(){
@@ -16,9 +21,9 @@ Walker.prototype.render = function(){
 
 Walker.prototype.walk = function(){
 	  for ( var i=0; i<this.loc.length; i++) {
-      this.vel = new PVector(2*n.noise(this.loc[i].x * 0.02, this.loc[i].y*0.016 )-1, 2*n.noise(this.loc[i].x * 0.017, this.loc[i].y*0.011 )-1);
+      this.vel = new PVector(2*n.noise(this.loc[i].x * v, this.loc[i].y*v2)-1, 2*n.noise(this.loc[i].x*v3, this.loc[i].y*v4) -1);
       // this.vel  = new Processing.PVector(1,1);
-      this.loc[i].add(this.vel);
+      this.loc[i].add(this.vel); 
   }
 };
 
