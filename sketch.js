@@ -1,7 +1,7 @@
 var w;
 
 function setup() {
-  createGraphics(1000,400);
+  createGraphics(1200,400);
   background(255);
   smooth();
   this._frameRate = 60;

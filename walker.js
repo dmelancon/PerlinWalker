@@ -4,10 +4,10 @@ function Walker(){
       this.loc[i] = new PVector(random(width), (height/2));
   }
 	n = new Perlin();
-	v = random(0.017,0.023);
-	v2 = random(0.013,0.019);
-    v3 = random(0.014,0.02);
-    v4 = random(0.008,0,014);
+	v = random(0.019,0.021);
+	v2 = random(0.015,0.017);
+    v3 = random(0.016,0.018);
+    v4 = random(0.010,0,012);
 
 }
 
